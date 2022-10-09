@@ -1,4 +1,4 @@
-const itemRef = document.querySelectorAll(".item");
+
 console.log(`Number of categories: ${itemRef.length}`);
 
 const resultArr = itemRef.forEach((element) => {
@@ -7,4 +7,4 @@ const resultArr = itemRef.forEach((element) => {
   console.log(`Category: ${titleRef.textContent}`);
   console.log(`Elements: ${subItemsRef.length}`);
 });
- 
+  
