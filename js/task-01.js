@@ -1,10 +1,11 @@
+const categories = document.querySelectorAll(".item");
+console.log(`Number of categories: ${categories.length}`);
+console.log(' ')
 
-console.log(`Number of categories: ${itemRef.length}`);
+for (const category of categories) {
+  console.log(`Category: ${category.firstElementChild.textContent}`)
+  console.log(`Elements: ${category.lastElementChild.children.length}`)
+  console.log(' ')
+}
 
-const resultArr = itemRef.forEach((element) => {
-    const titleRef = element.querySelector("h2");
-  const subItemsRef = element.querySelectorAll("li");
-  console.log(`Category: ${titleRef.textContent}`);
-  console.log(`Elements: ${subItemsRef.length}`);
-});
   
